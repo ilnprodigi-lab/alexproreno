@@ -1,0 +1,91 @@
+.layout {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+}
+
+.aside {
+  position: sticky;
+  top: 120px;
+  display: grid;
+  gap: 28px;
+}
+
+.asideText {
+  max-width: 42ch;
+  color: var(--stone);
+}
+
+.steps {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  padding-block: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stepNumber {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--bronze);
+  padding-top: 3px;
+}
+
+.stepTitle {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.stepText {
+  margin-top: 2px;
+  font-size: 0.9rem;
+  color: var(--stone);
+}
+
+.direct {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.directTitle {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  letter-spacing: -0.018em;
+}
+
+.directLinks {
+  display: grid;
+  gap: 4px;
+  font-size: 0.98rem;
+}
+
+.directLinks a {
+  color: var(--bronze);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--bronze-line);
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    position: static;
+  }
+}

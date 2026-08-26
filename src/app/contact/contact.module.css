@@ -1,0 +1,161 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding: clamp(26px, 3vw, 38px);
+  background: var(--paper);
+  transition: background var(--t-med);
+}
+
+.card:hover {
+  background: var(--paper-2);
+}
+
+.cardValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  letter-spacing: -0.022em;
+  line-height: 1.1;
+  color: var(--ink);
+  transition: color var(--t-med);
+}
+
+.card:hover .cardValue {
+  color: var(--bronze-deep);
+}
+
+.cardValueSmall {
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  word-break: break-word;
+}
+
+.cardNote {
+  font-size: 0.92rem;
+  color: var(--stone);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(28px, 4vw, 64px);
+  margin-top: clamp(48px, 5vw, 84px);
+  padding-top: clamp(32px, 4vw, 52px);
+  border-top: 1px solid var(--line);
+}
+
+.infoList {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.infoItem {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.infoLabel {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone-2);
+}
+
+.infoValue {
+  margin: 0;
+  text-align: right;
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+
+.infoValue a {
+  color: var(--bronze);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Zones d'intervention */
+.areas {
+  background: var(--paper-2);
+  border-block: 1px solid var(--line);
+}
+
+.areasLayout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+}
+
+.areasIntro {
+  max-width: 40ch;
+  margin-top: 18px;
+  color: var(--stone);
+}
+
+.districts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 clamp(20px, 3vw, 48px);
+  list-style: none;
+}
+
+.district {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 13px;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.districtLabel {
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+
+.districtDetail {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-2);
+  text-align: right;
+}
+
+.areasNote {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: var(--stone);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info,
+  .areasLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .districts {
+    grid-template-columns: 1fr;
+  }
+}

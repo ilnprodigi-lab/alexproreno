@@ -1,0 +1,128 @@
+.section {
+  background: var(--paper-2);
+  border-block: 1px solid var(--line);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: start;
+}
+
+.intro {
+  position: sticky;
+  top: 128px;
+}
+
+.introText {
+  max-width: 38ch;
+  margin: 20px 0 32px;
+  color: var(--stone);
+}
+
+.stepsWrap {
+  position: relative;
+}
+
+.steps {
+  list-style: none;
+}
+
+/* Ligne de progression : rail + trait rempli au scroll. */
+.rail {
+  position: absolute;
+  left: 27px;
+  top: 34px;
+  bottom: 34px;
+  width: 1px;
+  background: var(--line-2);
+}
+
+.railFill {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0;
+  background: var(--bronze);
+  transform-origin: top;
+}
+
+.step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: clamp(18px, 2.4vw, 32px);
+  padding-block: clamp(22px, 2.6vw, 34px);
+  border-top: 1px solid var(--line);
+}
+
+.step:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.marker {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  background: var(--paper-2);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--stone);
+  transition: border-color var(--t-med), color var(--t-med), background var(--t-med);
+}
+
+.stepActive .marker {
+  border-color: var(--bronze);
+  background: var(--bronze);
+  color: #14110c;
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.16;
+  margin-bottom: 8px;
+}
+
+.stepText {
+  max-width: 52ch;
+  font-size: 0.98rem;
+  color: var(--stone);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .intro {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .step {
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+  }
+
+  .marker {
+    width: 44px;
+    height: 44px;
+    font-size: 0.7rem;
+  }
+
+  .rail {
+    left: 21px;
+  }
+}

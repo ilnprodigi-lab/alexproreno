@@ -1,0 +1,154 @@
+.footer {
+  background: var(--paper-deep);
+  color: var(--stone);
+  padding-block: clamp(56px, 6vw, 88px) 28px;
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.1fr;
+  gap: clamp(32px, 4vw, 64px);
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.brandCol img {
+  height: 34px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
+
+.baseline {
+  max-width: 34ch;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--stone);
+}
+
+.social {
+  display: inline-flex;
+  margin-top: 22px;
+  font-size: 0.9rem;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(250, 248, 244, 0.28);
+  padding-bottom: 3px;
+  transition: border-color var(--t-fast);
+}
+
+.social:hover {
+  border-color: var(--sand);
+}
+
+.colTitle {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.list a {
+  display: inline-block;
+  padding-block: 3px;
+  color: var(--stone);
+  transition: color var(--t-fast);
+}
+
+.list a:hover {
+  color: var(--sand);
+}
+
+.contactList {
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.contactList strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--stone-2);
+  margin-bottom: 3px;
+}
+
+.contactList a {
+  display: inline-block;
+  padding-block: 3px;
+  color: var(--ink);
+  transition: color var(--t-fast);
+}
+
+.contactList a:hover {
+  color: var(--sand);
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding-top: 24px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone-2);
+}
+
+.legalList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  list-style: none;
+}
+
+.legalList a {
+  display: inline-block;
+  padding-block: 4px;
+  color: var(--stone-2);
+  transition: color var(--t-fast);
+}
+
+.legalList a:hover {
+  color: var(--sand);
+}
+
+@media (max-width: 900px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 32px;
+  }
+
+  .brandCol {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding-bottom: 96px;
+  }
+}
