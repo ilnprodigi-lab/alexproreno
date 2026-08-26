@@ -40,10 +40,6 @@
 .introLogo {
   height: 40px;
   width: auto;
-  /* Le fichier logo est un tracé sombre : inversé en clair pour ressortir
-     sur le rideau noir, comme dans le header et le footer. */
-  filter: brightness(0) invert(1);
-  opacity: 0.96;
 }
 
 .introRule {
