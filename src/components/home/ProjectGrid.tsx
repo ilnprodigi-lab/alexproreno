@@ -35,7 +35,9 @@ export function ProjectGrid({ projects, headingLevel = "h3" }: Props) {
                 />
               </div>
               <div className={styles.overlay}>
-                <span className={styles.location}>{project.location}</span>
+                {project.location ? (
+                  <span className={styles.location}>{project.location}</span>
+                ) : null}
                 <Heading className={styles.title}>{project.title}</Heading>
                 <span className={styles.service}>{project.serviceLabel}</span>
               </div>

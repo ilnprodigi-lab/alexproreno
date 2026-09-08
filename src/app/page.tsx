@@ -7,10 +7,9 @@ import { ProjectGrid } from "@/components/home/ProjectGrid";
 import { Process } from "@/components/home/Process";
 import { Trust } from "@/components/home/Trust";
 import { ContactCta } from "@/components/home/ContactCta";
-import { InteriorScene } from "@/components/three/InteriorScene";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { services } from "@/content/services";
-import { projects } from "@/content/projects";
+import { featuredProjects, projects } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "AlexProReno — Entreprise de rénovation à Paris",
@@ -51,20 +50,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="espace-titre">
-        <div className="container">
-          <SectionHead
-            eyebrow="L'espace, élément par élément"
-            title="Un intérieur se construit poste par poste"
-            id="espace-titre"
-            aside="Sol, cloisons, menuiseries, mobilier, éclairage : chaque élément dépend du précédent. Faites défiler pour voir un intérieur s'assembler, et ouvrez la prestation qui vous concerne."
-          />
-        </div>
-        <div className="container">
-          <InteriorScene />
-        </div>
-      </section>
-
       <section className="section" id="realisations" aria-labelledby="realisations-titre">
         <div className="container">
           <SectionHead
@@ -73,11 +58,11 @@ export default function HomePage() {
             id="realisations-titre"
             aside={
               <Link className="link-underline" href="/realisations">
-                Voir toutes les réalisations
+                Voir les {projects.length} réalisations
               </Link>
             }
           />
-          <ProjectGrid projects={projects} />
+          <ProjectGrid projects={featuredProjects} />
         </div>
       </section>
 

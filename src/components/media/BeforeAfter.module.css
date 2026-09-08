@@ -1,0 +1,141 @@
+.frame {
+  --x: 50%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  touch-action: pan-y;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* La photo d'avant est découpée à gauche du curseur. */
+.beforeLayer {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--x)) 0 0);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  z-index: 2;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  background: rgba(10, 9, 7, 0.72);
+  backdrop-filter: blur(3px);
+  pointer-events: none;
+  transition: opacity var(--t-med);
+}
+
+.badgeBefore {
+  left: 14px;
+  /* Le repère disparaît quand sa moitié n'est plus visible. */
+  opacity: clamp(0%, calc((var(--x) - 12%) * 10), 100%);
+}
+
+.badgeAfter {
+  right: 14px;
+  opacity: clamp(0%, calc((88% - var(--x)) * 10), 100%);
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--x);
+  z-index: 3;
+  width: 44px;
+  margin-left: -22px;
+  display: grid;
+  place-items: center;
+  cursor: ew-resize;
+}
+
+.handle:focus-visible {
+  outline: none;
+}
+
+.handleLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  margin-left: -0.5px;
+  background: rgba(246, 242, 233, 0.9);
+}
+
+.handleKnob {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(246, 242, 233, 0.55);
+  background: rgba(10, 9, 7, 0.68);
+  backdrop-filter: blur(4px);
+  color: var(--ink);
+  box-shadow: var(--shadow-md);
+  transition: scale var(--t-fast), border-color var(--t-fast), background var(--t-fast);
+}
+
+.frame:hover .handleKnob,
+.frameDragging .handleKnob {
+  scale: 1.06;
+  border-color: var(--bronze);
+}
+
+.handle:focus-visible .handleKnob {
+  border-color: var(--bronze-deep);
+  background: var(--bronze-soft);
+  scale: 1.06;
+}
+
+.frameDragging {
+  cursor: grabbing;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .handleKnob,
+  .badge {
+    transition: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .badge {
+    top: 10px;
+    font-size: 0.55rem;
+  }
+
+  .badgeBefore {
+    left: 10px;
+  }
+
+  .badgeAfter {
+    right: 10px;
+  }
+
+  .handleKnob {
+    width: 34px;
+    height: 34px;
+  }
+}

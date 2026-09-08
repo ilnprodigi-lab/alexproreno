@@ -22,8 +22,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const project = projectBySlug(slug);
   if (!project) return {};
-  const title = `${project.title} — ${project.location}`;
-  const description = `${project.summary} Réalisé à ${project.location} par AlexProReno.`;
+  const title = project.location ? `${project.title} — ${project.location}` : project.title;
+  const description = project.location
+    ? `${project.summary} Réalisé à ${project.location} par AlexProReno.`
+    : `${project.summary} Réalisé par AlexProReno.`;
   return {
     title,
     description,
@@ -53,7 +55,7 @@ export default async function ProjectPage({ params }: Params) {
   return (
     <>
       <PageHeader
-        eyebrow={project.location}
+        eyebrow={project.location ?? project.serviceLabel}
         title={project.title}
         intro={project.summary}
         crumbs={crumbs}
@@ -83,10 +85,12 @@ export default async function ProjectPage({ params }: Params) {
 
             <div className={styles.aside}>
               <ul className={styles.meta}>
-                <li className={styles.metaItem}>
-                  <span className={styles.metaLabel}>Localisation</span>
-                  <span className={styles.metaValue}>{project.location}</span>
-                </li>
+                {project.location ? (
+                  <li className={styles.metaItem}>
+                    <span className={styles.metaLabel}>Localisation</span>
+                    <span className={styles.metaValue}>{project.location}</span>
+                  </li>
+                ) : null}
                 <li className={styles.metaItem}>
                   <span className={styles.metaLabel}>Prestation</span>
                   <span className={styles.metaValue}>

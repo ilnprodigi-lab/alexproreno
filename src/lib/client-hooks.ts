@@ -2,8 +2,6 @@
 
 import { useSyncExternalStore } from "react";
 
-const noopSubscribe = () => () => {};
-
 /** Abonnement à une media query, sans setState dans un effet. */
 export function useMediaQuery(query: string) {
   return useSyncExternalStore(
@@ -26,29 +24,5 @@ export function useScrolled(threshold = 8) {
     },
     () => window.scrollY > threshold,
     () => false,
-  );
-}
-
-let webglSupport: boolean | null = null;
-
-/** Détection WebGL, évaluée une seule fois puis mémorisée. */
-export function useWebGLSupport() {
-  return useSyncExternalStore(
-    noopSubscribe,
-    () => {
-      if (webglSupport === null) {
-        try {
-          const canvas = document.createElement("canvas");
-          webglSupport = Boolean(
-            window.WebGLRenderingContext &&
-              (canvas.getContext("webgl2") || canvas.getContext("webgl")),
-          );
-        } catch {
-          webglSupport = false;
-        }
-      }
-      return webglSupport;
-    },
-    () => true,
   );
 }

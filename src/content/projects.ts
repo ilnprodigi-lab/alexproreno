@@ -7,8 +7,9 @@
 export type Project = {
   slug: string;
   title: string;
-  /** Localisation telle qu'annoncée par le client. */
-  location: string;
+  /** Localisation, telle qu'annoncée par le client. Omise si non communiquée :
+   *  rien ne doit être déduit ni approximé. */
+  location?: string;
   /** Prestation rattachée (slug). */
   service: string;
   serviceLabel: string;
@@ -17,9 +18,129 @@ export type Project = {
   image: { src: string; alt: string; width: number; height: number };
   /** Taille de la vignette dans la grille éditoriale. */
   size: "wide" | "tall" | "regular";
+  /** Retenue pour la sélection de la page d'accueil. */
+  featured?: boolean;
 };
 
 export const projects: Project[] = [
+  {
+    slug: "salle-de-bain-sous-combles",
+    title: "Salle de bain sous combles",
+    service: "renovation-interieure",
+    serviceLabel: "Rénovation intérieure",
+    summary:
+      "Aménagement d'une salle de bain sous rampant, avec baignoire îlot et vasque posée sur tablette en bois massif.",
+    description: [
+      "La baignoire îlot est installée contre le mur de faïence, sous la partie haute du rampant, là où la hauteur sous plafond reste disponible.",
+      "Le mur est habillé d'une faïence à motifs noir et blanc posée en damier irrégulier. La vasque repose sur une tablette en bois massif fixée en applique, alimentée par une robinetterie murale noire.",
+    ],
+    image: {
+      src: "/media/salle-de-bain-sous-combles.webp",
+      alt: "Salle de bain sous combles avec baignoire îlot, faïence à motifs noir et blanc et vasque posée sur une tablette en bois massif",
+      width: 747,
+      height: 1600,
+    },
+    size: "tall",
+    featured: true,
+  },
+  {
+    slug: "douche-italienne-zellige",
+    title: "Douche à l'italienne en zellige",
+    service: "pose-de-carrelage",
+    serviceLabel: "Pose de carrelage",
+    summary:
+      "Douche à l'italienne habillée de zellige coloré, avec niche intégrée dans l'épaisseur de la paroi.",
+    description: [
+      "Le zellige est posé verticalement, décalé d'une rangée à l'autre, avec une alternance de teintes reprise sur les trois parois.",
+      "La niche est ménagée dans l'épaisseur de la cloison et carrelée dans la continuité du mur. La colonne de douche est posée en applique, sur un axe centré.",
+    ],
+    image: {
+      src: "/media/douche-zellige.webp",
+      alt: "Douche à l'italienne entièrement habillée de zellige bleu, vert et jaune, avec niche intégrée et colonne de douche murale",
+      width: 1200,
+      height: 1600,
+    },
+    size: "regular",
+    featured: true,
+  },
+  {
+    slug: "salle-d-eau-beton-cire",
+    title: "Salle d'eau en béton ciré",
+    service: "renovation-interieure",
+    serviceLabel: "Rénovation intérieure",
+    summary:
+      "Salle d'eau traitée en béton ciré, avec meuble suspendu en chêne et vasque à poser.",
+    description: [
+      "Les murs sont recouverts d'un béton ciré appliqué en continu, y compris dans les angles et sur les tableaux.",
+      "Le meuble bas en chêne est suspendu et fermé par des portes sans poignée. La vasque est posée dessus et alimentée par une robinetterie murale. Une cloison de pavés de verre borde le plan et laisse passer la lumière.",
+    ],
+    image: {
+      src: "/media/salle-d-eau-beton-cire.webp",
+      alt: "Salle d'eau aux murs en béton ciré gris, avec meuble suspendu en chêne, vasque à poser grise et cloison de pavés de verre",
+      width: 1200,
+      height: 1600,
+    },
+    size: "regular",
+    featured: true,
+  },
+  {
+    slug: "cache-radiateur-chene",
+    title: "Cache-radiateur en chêne sur mesure",
+    service: "mobilier-sur-mesure",
+    serviceLabel: "Création de mobilier sur mesure",
+    summary:
+      "Cache-radiateur sur mesure en chêne, à claire-voie, dessiné sur les cotes du radiateur en place.",
+    description: [
+      "Le caisson est dimensionné sur le radiateur existant : hauteur, largeur et profondeur relevées avant fabrication, pour un habillage qui vient affleurer le mur.",
+      "La façade est ajourée de fentes verticales à angles arrondis, qui laissent circuler l'air. Les découpes latérales dégagent le robinet thermostatique et le raccordement.",
+    ],
+    image: {
+      src: "/media/cache-radiateur-chene.webp",
+      alt: "Cache-radiateur sur mesure en chêne à claire-voie, avec fentes verticales à angles arrondis, posé contre un mur blanc",
+      width: 899,
+      height: 1599,
+    },
+    size: "tall",
+    featured: true,
+  },
+  {
+    slug: "wc-meuble-vasque-chene",
+    title: "WC avec meuble vasque sur mesure",
+    service: "mobilier-sur-mesure",
+    serviceLabel: "Création de mobilier sur mesure",
+    summary:
+      "Aménagement d'un WC avec meuble vasque en chêne sur mesure et habillage mural en zellige.",
+    description: [
+      "Le meuble vasque est dessiné pour la largeur disponible entre la cloison et le mur, avec une vasque encastrée dans un plan qui vient mourir contre l'habillage.",
+      "Le mur du WC suspendu reçoit le même zellige que la douche, posé verticalement. Le sol est carrelé en grand format et se poursuit sous le meuble.",
+    ],
+    image: {
+      src: "/media/wc-meuble-vasque-chene.webp",
+      alt: "WC suspendu devant un mur en zellige coloré, à côté d'un meuble vasque sur mesure en chêne",
+      width: 1200,
+      height: 1600,
+    },
+    size: "regular",
+  },
+  {
+    slug: "couloir-menuiseries-chene",
+    title: "Couloir et menuiseries en chêne",
+    service: "renovation-interieure",
+    serviceLabel: "Rénovation intérieure",
+    summary:
+      "Rénovation d'un couloir : portes et huisseries plaquées chêne, parquet mosaïque et peinture.",
+    description: [
+      "Les portes sont plaquées chêne, à plis horizontaux marqués, et les huisseries sont habillées dans le même placage pour aligner les nus.",
+      "Le parquet mosaïque court sur toute la longueur du couloir. Murs, plafond et plinthes sont repris en peinture claire.",
+    ],
+    image: {
+      src: "/media/couloir-menuiseries-chene.webp",
+      alt: "Couloir d'appartement avec portes et huisseries plaquées chêne, parquet mosaïque et murs peints en blanc",
+      width: 963,
+      height: 1431,
+    },
+    size: "regular",
+  },
   {
     slug: "cuisine-contemporaine-paris-07",
     title: "Cuisine contemporaine sur mesure",
@@ -39,6 +160,7 @@ export const projects: Project[] = [
       height: 1066,
     },
     size: "wide",
+    featured: true,
   },
   {
     slug: "tete-de-lit-rangements-paris-17",
@@ -165,3 +287,6 @@ export const projects: Project[] = [
 export const projectBySlug = (slug: string) => projects.find((p) => p.slug === slug);
 export const projectsBySlugs = (slugs: string[]) =>
   slugs.map(projectBySlug).filter((p): p is Project => Boolean(p));
+
+/** Sélection affichée en page d'accueil, dans l'ordre du tableau ci-dessus. */
+export const featuredProjects = projects.filter((project) => project.featured);
