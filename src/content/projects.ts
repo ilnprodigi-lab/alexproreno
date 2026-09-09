@@ -16,6 +16,9 @@ export type Project = {
   summary: string;
   description: string[];
   image: { src: string; alt: string; width: number; height: number };
+  /** Photo d'avant travaux, au même cadrage que `image`. Sa présence active
+   *  le comparateur à curseur sur la fiche. */
+  before?: { src: string; alt: string; width: number; height: number };
   /** Taille de la vignette dans la grille éditoriale. */
   size: "wide" | "tall" | "regular";
   /** Retenue pour la sélection de la page d'accueil. */
@@ -23,6 +26,31 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "renovation-douche",
+    title: "Rénovation complète d'une douche",
+    service: "renovation-interieure",
+    serviceLabel: "Rénovation intérieure",
+    summary:
+      "Réfection d'une douche dégradée par l'humidité : dépose complète, reprise des parois et nouvelle faïence.",
+    description: [
+      "Avant travaux, le revêtement mural était décollé et les supports noircis par l'humidité sur toute la hauteur de la douche, jusqu'au sol carrelé.",
+      "L'ensemble a été déposé, les parois reprises, puis habillées d'une faïence grand format posée à joints décalés. Un receveur extra-plat remplace l'ancien sol carrelé, et le carrelage se prolonge au sol de la pièce.",
+    ],
+    image: {
+      src: "/media/douche-renovee-apres.webp",
+      alt: "Douche rénovée après travaux, habillée d'une faïence grand format beige, avec receveur extra-plat blanc",
+      width: 410,
+      height: 975,
+    },
+    before: {
+      src: "/media/douche-renovee-avant.webp",
+      alt: "La même douche avant travaux : faïence décollée et supports noircis par l'humidité",
+      width: 410,
+      height: 975,
+    },
+    size: "regular",
+  },
   {
     slug: "salle-de-bain-sous-combles",
     title: "Salle de bain sous combles",

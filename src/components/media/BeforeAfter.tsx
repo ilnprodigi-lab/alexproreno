@@ -80,7 +80,14 @@ export function BeforeAfter({
     <div
       ref={frameRef}
       className={`${styles.frame} ${dragging ? styles.frameDragging : ""}`}
-      style={{ "--x": `${x}%`, aspectRatio: `${after.width} / ${after.height}` } as React.CSSProperties}
+      style={
+        {
+          "--x": `${x}%`,
+          // Sert à plafonner la hauteur du cadre pour les formats très allongés.
+          "--ratio": after.width / after.height,
+          aspectRatio: `${after.width} / ${after.height}`,
+        } as React.CSSProperties
+      }
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={stopDragging}

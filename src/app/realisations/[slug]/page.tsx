@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BeforeAfter } from "@/components/media/BeforeAfter";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ProjectGrid } from "@/components/home/ProjectGrid";
 import { SectionHead } from "@/components/ui/SectionHead";
@@ -66,14 +67,23 @@ export default async function ProjectPage({ params }: Params) {
           <div className={styles.layout}>
             <div>
               <figure className={styles.figure} data-reveal>
-                <Image
-                  src={project.image.src}
-                  alt={project.image.alt}
-                  width={project.image.width}
-                  height={project.image.height}
-                  sizes="(max-width: 960px) 100vw, 62vw"
-                  priority
-                />
+                {project.before ? (
+                  <BeforeAfter
+                    before={project.before}
+                    after={project.image}
+                    sizes="(max-width: 960px) 100vw, 62vw"
+                    priority
+                  />
+                ) : (
+                  <Image
+                    src={project.image.src}
+                    alt={project.image.alt}
+                    width={project.image.width}
+                    height={project.image.height}
+                    sizes="(max-width: 960px) 100vw, 62vw"
+                    priority
+                  />
+                )}
               </figure>
 
               <div className={styles.body}>

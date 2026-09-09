@@ -1,7 +1,14 @@
 .frame {
   --x: 50%;
+  /* Hauteur maximale du comparateur : au-delà, une photo très allongée
+     occuperait plusieurs hauteurs d'écran. La largeur suit le ratio. */
+  --max-h: 76vh;
   position: relative;
   width: 100%;
+  /* Le plancher évite un cadre écrasé si la hauteur de fenêtre est nulle
+     (aperçu masqué, impression, contexte embarqué). */
+  max-width: calc(max(var(--max-h), 360px) * var(--ratio, 1));
+  margin-inline: auto;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
