@@ -504,7 +504,7 @@ export const services: Service[] = [
       FAQ_DEVIS,
     ],
     image: IMG.meubleMural,
-    projects: ["meuble-mural-antony", "renovation-complete"],
+    projects: ["bureau-sur-mesure", "meuble-mural-antony", "renovation-complete"],
     related: [
       "mobilier-sur-mesure",
       "electricite",
@@ -812,7 +812,7 @@ export const services: Service[] = [
       FAQ_DEVIS,
     ],
     image: IMG.peinture,
-    projects: ["renovation-complete", "cuisine-contemporaine-paris-07"],
+    projects: ["chambre-peinture", "renovation-complete", "cuisine-contemporaine-paris-07"],
     related: [
       "renovation-interieure",
       "pose-de-carrelage",
@@ -937,7 +937,7 @@ export const services: Service[] = [
       FAQ_DEVIS,
     ],
     image: IMG.electricite,
-    projects: ["renovation-complete"],
+    projects: ["tableau-electrique", "renovation-complete"],
     related: [
       "renovation-interieure",
       "plomberie",

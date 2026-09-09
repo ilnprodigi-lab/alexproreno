@@ -27,6 +27,63 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "tableau-electrique",
+    title: "Remplacement d'un tableau électrique",
+    service: "electricite",
+    serviceLabel: "Électricité",
+    summary:
+      "Remplacement d'un tableau électrique : trois rangées de protections, disjoncteur de branchement accessible et capot posé.",
+    description: [
+      "Le tableau est organisé en trois rangées, chacune commandée par son interrupteur différentiel, les disjoncteurs étant regroupés par circuit.",
+      "Le capot est posé et les emplacements libres sont obturés. Le disjoncteur de branchement reste accessible en partie haute.",
+    ],
+    image: {
+      src: "/media/tableau-electrique.webp",
+      alt: "Tableau électrique remplacé, capot posé, avec trois rangées de disjoncteurs et un disjoncteur de branchement en partie haute",
+      width: 285,
+      height: 650,
+    },
+    size: "tall",
+  },
+  {
+    slug: "bureau-sur-mesure",
+    title: "Bureau et bibliothèque sur mesure",
+    service: "amenagement-de-bureau",
+    serviceLabel: "Aménagement de bureau",
+    summary:
+      "Aménagement d'un bureau sur mesure : plan traversant, rangements hauts jusqu'au plafond et bibliothèque à fond peint.",
+    description: [
+      "Le plan de travail court d'un mur à l'autre et repose sur des caissons bas, avec deux tiroirs centraux qui dégagent l'assise.",
+      "La bibliothèque latérale et le fond du plan sont peints dans un bleu profond, en contraste avec les façades en chêne clair. Les meubles hauts remontent jusqu'au plafond.",
+    ],
+    image: {
+      src: "/media/bureau-sur-mesure.webp",
+      alt: "Bureau sur mesure en chêne clair avec plan de travail traversant, rangements hauts et bibliothèque à fond bleu",
+      width: 980,
+      height: 920,
+    },
+    size: "regular",
+  },
+  {
+    slug: "chambre-peinture",
+    title: "Mise en peinture d'une chambre",
+    service: "peinture-et-finitions",
+    serviceLabel: "Peinture & finitions",
+    summary:
+      "Mise en peinture d'une chambre : mur d'accent jaune moutarde, murs et plafond repris en teinte claire.",
+    description: [
+      "Le mur du fond est traité dans un jaune moutarde mat, les autres murs et le plafond dans une teinte claire, avec des arêtes reprises à la bande.",
+      "Les appareillages ont été déposés puis reposés après séchage, et les tableaux de fenêtre sont peints jusqu'à la menuiserie.",
+    ],
+    image: {
+      src: "/media/chambre-peinture.webp",
+      alt: "Chambre repeinte avec un mur d'accent jaune moutarde, murs clairs et fenêtre donnant sur une façade haussmannienne",
+      width: 1200,
+      height: 1290,
+    },
+    size: "regular",
+  },
+  {
     slug: "renovation-douche",
     title: "Rénovation complète d'une douche",
     service: "renovation-interieure",
