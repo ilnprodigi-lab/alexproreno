@@ -319,7 +319,7 @@ export const services: Service[] = [
       FAQ_DEVIS,
     ],
     image: IMG.cuisine,
-    projects: ["cuisine-contemporaine-paris-07", "renovation-complete"],
+    projects: ["cuisine-en-u-chene", "cuisine-contemporaine-paris-07", "renovation-complete"],
     related: [
       "renovation-interieure",
       "plomberie",

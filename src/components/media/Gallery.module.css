@@ -1,0 +1,98 @@
+.wrap {
+  position: relative;
+  margin-top: clamp(16px, 2vw, 24px);
+}
+
+.track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
+  list-style: none;
+  padding: 0 0 10px;
+  margin: 0;
+  /* La barre reste discrète mais visible : elle signale qu'on peut défiler. */
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-2) transparent;
+  overscroll-behavior-x: contain;
+}
+
+.track:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 4px;
+  border-radius: var(--radius);
+}
+
+.track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.track::-webkit-scrollbar-thumb {
+  background: var(--line-2);
+  border-radius: 999px;
+}
+
+.item {
+  flex: 0 0 auto;
+  /* Hauteur fixe, largeur libre : chaque photo garde son cadrage d'origine,
+     portrait comme paysage, et la bande finit par déborder. */
+  height: clamp(280px, 54vh, 520px);
+  scroll-snap-align: start;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.image {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+}
+
+/* Boutons : utiles à la souris, inutiles au doigt. */
+.controls {
+  display: none;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  background: var(--paper);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+
+.arrow:hover,
+.arrow:focus-visible {
+  border-color: var(--bronze);
+  color: var(--bronze-deep);
+  background: var(--bronze-soft);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .controls {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    scroll-behavior: auto;
+  }
+
+  .arrow {
+    transition: none;
+  }
+}

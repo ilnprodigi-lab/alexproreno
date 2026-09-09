@@ -19,6 +19,8 @@ export type Project = {
   /** Photo d'avant travaux, au même cadrage que `image`. Sa présence active
    *  le comparateur à curseur sur la fiche. */
   before?: { src: string; alt: string; width: number; height: number };
+  /** Photos complémentaires du même chantier, présentées en bande défilante. */
+  gallery?: { src: string; alt: string; width: number; height: number }[];
   /** Taille de la vignette dans la grille éditoriale. */
   size: "wide" | "tall" | "regular";
   /** Retenue pour la sélection de la page d'accueil. */
@@ -26,6 +28,33 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "cuisine-en-u-chene",
+    title: "Cuisine en U en chêne et laque",
+    service: "cuisine-sur-mesure",
+    serviceLabel: "Cuisine sur mesure",
+    summary:
+      "Cuisine en U sur mesure : façades chêne à prise de main intégrée, meubles hauts laqués et crédence inox.",
+    description: [
+      "L'implantation en U occupe les trois murs de la pièce : la cuisson d'un côté, l'évier sous la fenêtre, et un retour qui longe la verrière.",
+      "Les façades basses sont en chêne, sans poignée, avec une prise de main usinée dans l'épaisseur. Les meubles hauts sont laqués dans un bleu profond, et une tôle inox protège le mur derrière la plaque de cuisson.",
+    ],
+    image: {
+      src: "/media/cuisine-u-verriere.webp",
+      alt: "Cuisine en U sur mesure avec façades en chêne, meubles hauts laqués bleu, crédence inox et verrière noire",
+      width: 1400,
+      height: 1867,
+    },
+    gallery: [
+      {
+        src: "/media/cuisine-u-vue-entree.webp",
+        alt: "La même cuisine vue depuis l'entrée de la pièce, avec la colonne four et l'évier sous la fenêtre",
+        width: 1200,
+        height: 1600,
+      },
+    ],
+    size: "regular",
+  },
   {
     slug: "tableau-electrique",
     title: "Remplacement d'un tableau électrique",
@@ -40,8 +69,8 @@ export const projects: Project[] = [
     image: {
       src: "/media/tableau-electrique.webp",
       alt: "Tableau électrique remplacé, capot posé, avec trois rangées de disjoncteurs et un disjoncteur de branchement en partie haute",
-      width: 285,
-      height: 650,
+      width: 405,
+      height: 900,
     },
     size: "tall",
   },
@@ -145,6 +174,26 @@ export const projects: Project[] = [
       width: 1200,
       height: 1600,
     },
+    gallery: [
+      {
+        src: "/media/zellige-banc.webp",
+        alt: "Banc maçonné en béton ciré dans la douche, bordé du même zellige coloré",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/zellige-banc-angle.webp",
+        alt: "Le banc de douche vu sous un autre angle, avec l'applique posée sur le zellige",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/zellige-sol.webp",
+        alt: "Sol de la salle d'eau en carrelage grand format, au pied de la cloison habillée de zellige",
+        width: 1200,
+        height: 1600,
+      },
+    ],
     size: "regular",
     featured: true,
   },
@@ -224,6 +273,20 @@ export const projects: Project[] = [
       width: 963,
       height: 1431,
     },
+    gallery: [
+      {
+        src: "/media/portes-chene-detail.webp",
+        alt: "Détail de deux portes plaquées chêne dans un angle, avec huisseries habillées et interrupteur encastré",
+        width: 992,
+        height: 1488,
+      },
+      {
+        src: "/media/entree-parquet-mosaique.webp",
+        alt: "Entrée de l'appartement avec parquet mosaïque, placard et porte plaquée chêne",
+        width: 1600,
+        height: 1067,
+      },
+    ],
     size: "regular",
   },
   {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BeforeAfter } from "@/components/media/BeforeAfter";
+import { Gallery } from "@/components/media/Gallery";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ProjectGrid } from "@/components/home/ProjectGrid";
 import { SectionHead } from "@/components/ui/SectionHead";
@@ -85,6 +86,8 @@ export default async function ProjectPage({ params }: Params) {
                   />
                 )}
               </figure>
+
+              {project.gallery?.length ? <Gallery images={project.gallery} /> : null}
 
               <div className={styles.body}>
                 {project.description.map((paragraph) => (

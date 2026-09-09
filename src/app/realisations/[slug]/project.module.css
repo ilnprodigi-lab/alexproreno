@@ -5,6 +5,12 @@
   align-items: start;
 }
 
+/* Sans cela, une colonne de grille s'élargit pour contenir son enfant le plus
+   large : la bande de photos ne déborderait jamais et ne défilerait pas. */
+.layout > * {
+  min-width: 0;
+}
+
 .figure {
   margin: 0;
   border-radius: var(--radius-lg);
