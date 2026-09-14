@@ -38,8 +38,8 @@ export const company = {
   rneRegistration: "25 novembre 2015",
   area: "Paris et région parisienne",
   areaShort: "Île-de-France",
-  hours: "Du lundi au vendredi, de 8h à 18h",
-  hoursShort: "Lun – ven · 8h – 18h",
+  hours: "Du lundi au vendredi de 7h30 à 17h, le samedi de 7h à 17h30",
+  hoursShort: "Lun – ven 7h30 – 17h · Sam 7h – 17h30",
 } as const;
 
 /**

@@ -10,7 +10,7 @@ import styles from "./contact.module.css";
 export const metadata: Metadata = {
   title: "Contact — entreprise de rénovation à Paris",
   description:
-    "Contactez AlexProReno : 07 82 47 53 39, alexproreno91@gmail.com. Entreprise de rénovation intervenant à Paris et en Île-de-France, du lundi au vendredi de 8h à 18h.",
+    "Contactez AlexProReno : 07 82 47 53 39, alexproreno91@gmail.com. Entreprise de rénovation intervenant à Paris et en Île-de-France, du lundi au samedi.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact — entreprise de rénovation à Paris",

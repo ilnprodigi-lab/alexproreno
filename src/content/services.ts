@@ -672,7 +672,7 @@ export const services: Service[] = [
       {
         question: "Intervenez-vous en urgence, la nuit ou le week-end ?",
         answer:
-          "Non. Nous intervenons du lundi au vendredi, de 8h à 18h, sur des chantiers planifiés. Pour une fuite ou une panne nécessitant une intervention immédiate, il faut faire appel à un service de dépannage d'urgence.",
+          "Pas en urgence ni la nuit. Nous intervenons du lundi au vendredi de 7h30 à 17h et le samedi de 7h à 17h30, sur des chantiers planifiés. Pour une fuite ou une panne nécessitant une intervention immédiate, il faut faire appel à un service de dépannage d'urgence.",
       },
       {
         question: "Rénovez-vous une salle de bain complète ?",
