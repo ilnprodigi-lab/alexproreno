@@ -43,6 +43,7 @@ export function localBusinessJsonLd() {
       addressCountry: "FR",
     },
     vatID: company.vat.replace(/\s/g, ""),
+    foundingDate: company.foundingYear,
     knowsLanguage: ["fr"],
     areaServed,
     sameAs: [company.instagram],

@@ -11,8 +11,9 @@ années d'expérience, marques partenaires, ou réalisations. Si une information
 elle ne s'affiche pas — on ne comble pas avec du plausible.
 
 Les compteurs du site WordPress d'origine étaient vides ; ils ont été retirés, pas
-remplis. L'année de création reste non affichée tant que le client n'a pas arbitré
-entre 2011 (ancienne maquette) et l'immatriculation RNE du 25/11/2015 (mentions légales).
+remplis. L'année de création a été arbitrée par le client : **2015**, celle de
+l'immatriculation RNE du 25/11/2015. Elle est affichée sur la page À propos et
+publiée en `foundingDate` dans les données structurées.
 
 ## Contenu
 

@@ -36,6 +36,8 @@ export const company = {
   vat: "FR42 814964037",
   ape: "41.20A — Construction de maisons individuelles",
   rneRegistration: "25 novembre 2015",
+  /** Arbitré par le client : l'année retenue est celle de l'immatriculation. */
+  foundingYear: "2015",
   area: "Paris et région parisienne",
   areaShort: "Île-de-France",
   hours: "Du lundi au vendredi de 7h30 à 17h, le samedi de 7h à 17h30",

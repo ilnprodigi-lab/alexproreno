@@ -127,6 +127,10 @@ export default function AboutPage() {
                 <dd className={styles.identityValue}>{company.legalForm}</dd>
               </div>
               <div className={styles.identityItem}>
+                <dt className={styles.identityLabel}>Création</dt>
+                <dd className={styles.identityValue}>{company.foundingYear}</dd>
+              </div>
+              <div className={styles.identityItem}>
                 <dt className={styles.identityLabel}>Activité</dt>
                 <dd className={styles.identityValue}>{company.ape}</dd>
               </div>
