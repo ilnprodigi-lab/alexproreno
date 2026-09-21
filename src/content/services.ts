@@ -875,7 +875,7 @@ export const services: Service[] = [
       FAQ_ZONE,
     ],
     image: IMG.carrelage,
-    projects: ["renovation-complete", "cuisine-contemporaine-paris-07"],
+    projects: ["douche-italienne-marbre", "renovation-complete", "cuisine-contemporaine-paris-07"],
     related: [
       "renovation-interieure",
       "plomberie",

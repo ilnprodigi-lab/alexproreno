@@ -29,6 +29,33 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "douche-italienne-marbre",
+    title: "Douche à l'italienne, faïence effet marbre",
+    service: "pose-de-carrelage",
+    serviceLabel: "Pose de carrelage",
+    summary:
+      "Douche à l'italienne habillée d'une faïence grand format effet marbre, avec receveur extra-plat et paroi coulissante.",
+    description: [
+      "La faïence grand format effet marbre est posée à joints décalés, sur les trois parois. Les coupes tombent dans les angles, et les joints restent fins pour ne pas casser le dessin des veines.",
+      "Le receveur extra-plat blanc est posé au ras du sol, avec une bonde carrée centrée. Une paroi coulissante en verre, profilés chromés, ferme la douche côté pièce.",
+    ],
+    image: {
+      src: "/media/douche-marbre-receveur.webp",
+      alt: "Douche à l'italienne carrelée en faïence effet marbre, avec receveur extra-plat blanc et bonde carrée centrée",
+      width: 1086,
+      height: 1448,
+    },
+    gallery: [
+      {
+        src: "/media/douche-marbre-ensemble.webp",
+        alt: "La même douche vue d'ensemble, avec la paroi coulissante en verre, le mitigeur et la douchette sur barre chromée",
+        width: 1116,
+        height: 1112,
+      },
+    ],
+    size: "regular",
+  },
+  {
     slug: "cuisine-en-u-chene",
     title: "Cuisine en U en chêne et laque",
     service: "cuisine-sur-mesure",
