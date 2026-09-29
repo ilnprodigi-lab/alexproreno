@@ -93,10 +93,8 @@ export default function ContactPage() {
                 </dd>
               </div>
               <div className={styles.infoItem}>
-                <dt className={styles.infoLabel}>Siège</dt>
-                <dd className={styles.infoValue}>
-                  {company.address.street}, {company.address.postalCode} {company.address.city}
-                </dd>
+                <dt className={styles.infoLabel}>Zone d&apos;intervention</dt>
+                <dd className={styles.infoValue}>{company.area}</dd>
               </div>
             </dl>
           </div>

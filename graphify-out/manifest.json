@@ -1,0 +1,518 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1788856397.566416,
+    "seen": 1790185553.888638,
+    "ast_hash": "e3f9db0429020e660a08ccdd2b7f6ecc",
+    "semantic_hash": "e3f9db0429020e660a08ccdd2b7f6ecc"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1788629802.2381036,
+    "seen": 1790185553.88864,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "next.config.ts": {
+    "mtime": 1788629802.238225,
+    "seen": 1790185553.888641,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "package.json": {
+    "mtime": 1788856743.229987,
+    "seen": 1790185553.888641,
+    "ast_hash": "f4b5462e51aff2b029332791eeb1912a",
+    "semantic_hash": "f4b5462e51aff2b029332791eeb1912a"
+  },
+  "scripts/crawl.mjs": {
+    "mtime": 1788629802.2421322,
+    "seen": 1790185553.888642,
+    "ast_hash": "e00bdbab33313b16b9b61596299b81eb",
+    "semantic_hash": "e00bdbab33313b16b9b61596299b81eb"
+  },
+  "scripts/optimize-media.mjs": {
+    "mtime": 1788629802.2422388,
+    "seen": 1790185553.888642,
+    "ast_hash": "1c365429c19e573e63e7af00195d1648",
+    "semantic_hash": "1c365429c19e573e63e7af00195d1648"
+  },
+  "src/app/a-propos/page.tsx": {
+    "mtime": 1789412983.9324117,
+    "seen": 1790185553.888642,
+    "ast_hash": "cf4aaa020c5e7742d350a47355fc1401",
+    "semantic_hash": "cf4aaa020c5e7742d350a47355fc1401"
+  },
+  "src/app/api/devis/route.ts": {
+    "mtime": 1788629802.2428775,
+    "seen": 1790185553.888643,
+    "ast_hash": "09bfd9eec7d0477d201993965b155b69",
+    "semantic_hash": "09bfd9eec7d0477d201993965b155b69"
+  },
+  "src/app/conditions-utilisation/page.tsx": {
+    "mtime": 1788629802.243049,
+    "seen": 1790185553.888643,
+    "ast_hash": "b2de6b792ed8fabe6329475095ba6d2f",
+    "semantic_hash": "b2de6b792ed8fabe6329475095ba6d2f"
+  },
+  "src/app/contact/page.tsx": {
+    "mtime": 1789407908.0309045,
+    "seen": 1790185553.888643,
+    "ast_hash": "aa237116c3d2aa5ddb916b92c4111930",
+    "semantic_hash": "aa237116c3d2aa5ddb916b92c4111930"
+  },
+  "src/app/devis/page.tsx": {
+    "mtime": 1788629802.2440438,
+    "seen": 1790185553.888643,
+    "ast_hash": "d8f2213b2e2812fc47ba435989ac38a1",
+    "semantic_hash": "d8f2213b2e2812fc47ba435989ac38a1"
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1788629802.2445235,
+    "seen": 1790185553.888644,
+    "ast_hash": "42ccab90e99357e2eb99fba21736f8e4",
+    "semantic_hash": "42ccab90e99357e2eb99fba21736f8e4"
+  },
+  "src/app/mentions-legales/page.tsx": {
+    "mtime": 1788629802.244736,
+    "seen": 1790185553.888644,
+    "ast_hash": "6e6ecd1616b335d2aff085b030955e8c",
+    "semantic_hash": "6e6ecd1616b335d2aff085b030955e8c"
+  },
+  "src/app/not-found.tsx": {
+    "mtime": 1788629802.2448707,
+    "seen": 1790185553.8886452,
+    "ast_hash": "5af18194d13226ba4898ac621be60457",
+    "semantic_hash": "5af18194d13226ba4898ac621be60457"
+  },
+  "src/app/page.tsx": {
+    "mtime": 1788869489.0159369,
+    "seen": 1790185553.8886452,
+    "ast_hash": "8bd211827b1508c1caad79cec146a197",
+    "semantic_hash": "8bd211827b1508c1caad79cec146a197"
+  },
+  "src/app/politique-de-confidentialite/page.tsx": {
+    "mtime": 1788629802.245218,
+    "seen": 1790185553.8886452,
+    "ast_hash": "7c40c08a4c3dc1506fa509cbc3eef767",
+    "semantic_hash": "7c40c08a4c3dc1506fa509cbc3eef767"
+  },
+  "src/app/prestations/[slug]/page.tsx": {
+    "mtime": 1788629802.2455416,
+    "seen": 1790185553.8886452,
+    "ast_hash": "48676a6c8d13a2dd142b997663a88170",
+    "semantic_hash": "48676a6c8d13a2dd142b997663a88170"
+  },
+  "src/app/prestations/page.tsx": {
+    "mtime": 1788629802.245796,
+    "seen": 1790185553.888646,
+    "ast_hash": "46510f471185b1706eee657c0dbdc19c",
+    "semantic_hash": "46510f471185b1706eee657c0dbdc19c"
+  },
+  "src/app/realisations/[slug]/page.tsx": {
+    "mtime": 1788947444.2765942,
+    "seen": 1790185553.888646,
+    "ast_hash": "5ce0eb329626768d567aa110ed4e1b5f",
+    "semantic_hash": "5ce0eb329626768d567aa110ed4e1b5f"
+  },
+  "src/app/realisations/page.tsx": {
+    "mtime": 1788629802.246325,
+    "seen": 1790185553.888646,
+    "ast_hash": "00f77e253b0780012705f99e74939177",
+    "semantic_hash": "00f77e253b0780012705f99e74939177"
+  },
+  "src/app/robots.ts": {
+    "mtime": 1788629802.2464223,
+    "seen": 1790185553.8886468,
+    "ast_hash": "04b150b54135db95b10c066675b0f53c",
+    "semantic_hash": "04b150b54135db95b10c066675b0f53c"
+  },
+  "src/app/sitemap.ts": {
+    "mtime": 1788629802.246542,
+    "seen": 1790185553.8886468,
+    "ast_hash": "83d9979f1d6141d0fce7b911284bc519",
+    "semantic_hash": "83d9979f1d6141d0fce7b911284bc519"
+  },
+  "src/components/home/ContactCta.tsx": {
+    "mtime": 1788629802.2468436,
+    "seen": 1790185553.8886468,
+    "ast_hash": "6684fb5cdb7f75210ac0311300b5dddc",
+    "semantic_hash": "6684fb5cdb7f75210ac0311300b5dddc"
+  },
+  "src/components/home/Craft.tsx": {
+    "mtime": 1788629802.2469249,
+    "seen": 1790185553.888648,
+    "ast_hash": "7a40e98b50fc512ac339ee70054fe21f",
+    "semantic_hash": "7a40e98b50fc512ac339ee70054fe21f"
+  },
+  "src/components/home/Hero.tsx": {
+    "mtime": 1788629802.247113,
+    "seen": 1790185553.888648,
+    "ast_hash": "572d9a5a68fbda8a94d72988afa8f29a",
+    "semantic_hash": "572d9a5a68fbda8a94d72988afa8f29a"
+  },
+  "src/components/home/Process.tsx": {
+    "mtime": 1788629802.2472842,
+    "seen": 1790185553.888648,
+    "ast_hash": "9ee75fc939a8c1ed2ed9fb32545bf68f",
+    "semantic_hash": "9ee75fc939a8c1ed2ed9fb32545bf68f"
+  },
+  "src/components/home/ProjectGrid.tsx": {
+    "mtime": 1788868780.4556596,
+    "seen": 1790185553.888648,
+    "ast_hash": "6a9bef842dd304d889d741fcbb48195d",
+    "semantic_hash": "6a9bef842dd304d889d741fcbb48195d"
+  },
+  "src/components/home/ServiceGrid.tsx": {
+    "mtime": 1788629802.2476327,
+    "seen": 1790185553.888649,
+    "ast_hash": "7a34456076c3abac58bf9b0ef8b7dd81",
+    "semantic_hash": "7a34456076c3abac58bf9b0ef8b7dd81"
+  },
+  "src/components/home/Trust.tsx": {
+    "mtime": 1788629802.2477121,
+    "seen": 1790185553.888649,
+    "ast_hash": "6003b8e3918c7f9b1aa72588a4e34f10",
+    "semantic_hash": "6003b8e3918c7f9b1aa72588a4e34f10"
+  },
+  "src/components/layout/Footer.tsx": {
+    "mtime": 1788629802.2479706,
+    "seen": 1790185553.888649,
+    "ast_hash": "27e3082b16f7b8efc1a3d37485418e23",
+    "semantic_hash": "27e3082b16f7b8efc1a3d37485418e23"
+  },
+  "src/components/layout/Header.tsx": {
+    "mtime": 1788629802.2481837,
+    "seen": 1790185553.88865,
+    "ast_hash": "03b2b3b68c087c2239d07b672c68fd3f",
+    "semantic_hash": "03b2b3b68c087c2239d07b672c68fd3f"
+  },
+  "src/components/layout/MobileActionBar.tsx": {
+    "mtime": 1788629802.2483613,
+    "seen": 1790185553.88865,
+    "ast_hash": "c254156e335adb817683fe2b68e6190a",
+    "semantic_hash": "c254156e335adb817683fe2b68e6190a"
+  },
+  "src/components/media/BeforeAfter.tsx": {
+    "mtime": 1788940912.078817,
+    "seen": 1790185553.88865,
+    "ast_hash": "ae05cdb387aa7b093ce8120b64bf2f5f",
+    "semantic_hash": "ae05cdb387aa7b093ce8120b64bf2f5f"
+  },
+  "src/components/media/Gallery.tsx": {
+    "mtime": 1788947568.0344048,
+    "seen": 1790185553.888651,
+    "ast_hash": "f84d9bd87f0439e03989d3b85a0b2107",
+    "semantic_hash": "f84d9bd87f0439e03989d3b85a0b2107"
+  },
+  "src/components/quote/QuoteForm.tsx": {
+    "mtime": 1788629802.248654,
+    "seen": 1790185553.888651,
+    "ast_hash": "33f8a350394879e90e974b98ed374430",
+    "semantic_hash": "33f8a350394879e90e974b98ed374430"
+  },
+  "src/components/ui/JsonLd.tsx": {
+    "mtime": 1788629802.2493305,
+    "seen": 1790185553.888651,
+    "ast_hash": "b1ac0e2e930f4069a6c72916aa17bc9f",
+    "semantic_hash": "b1ac0e2e930f4069a6c72916aa17bc9f"
+  },
+  "src/components/ui/LegalLayout.tsx": {
+    "mtime": 1788629802.2495406,
+    "seen": 1790185553.888651,
+    "ast_hash": "aa7093b0eb3c17829fb1fce7d3fb60a7",
+    "semantic_hash": "aa7093b0eb3c17829fb1fce7d3fb60a7"
+  },
+  "src/components/ui/PageHeader.tsx": {
+    "mtime": 1788629802.2497332,
+    "seen": 1790185553.888652,
+    "ast_hash": "89340182ca4fb3dcc1970f256715cabe",
+    "semantic_hash": "89340182ca4fb3dcc1970f256715cabe"
+  },
+  "src/components/ui/Parallax.tsx": {
+    "mtime": 1788629802.2498398,
+    "seen": 1790185553.888652,
+    "ast_hash": "333b51b1c9befa83d922bbe15c43179c",
+    "semantic_hash": "333b51b1c9befa83d922bbe15c43179c"
+  },
+  "src/components/ui/RevealProvider.tsx": {
+    "mtime": 1788629802.2499223,
+    "seen": 1790185553.888652,
+    "ast_hash": "0a4f7f9e3fcbbc61801703c67f2b69f4",
+    "semantic_hash": "0a4f7f9e3fcbbc61801703c67f2b69f4"
+  },
+  "src/components/ui/SectionHead.tsx": {
+    "mtime": 1788629802.2500982,
+    "seen": 1790185553.888653,
+    "ast_hash": "0aad3fad8d1a70f7d453eca55527337d",
+    "semantic_hash": "0aad3fad8d1a70f7d453eca55527337d"
+  },
+  "src/content/projects.ts": {
+    "mtime": 1790008075.180149,
+    "seen": 1790185553.888653,
+    "ast_hash": "7095af6145c52d67c68cc2be3d587afb",
+    "semantic_hash": "7095af6145c52d67c68cc2be3d587afb"
+  },
+  "src/content/services.ts": {
+    "mtime": 1790008075.1806633,
+    "seen": 1790185553.888653,
+    "ast_hash": "b9da0cc2fa74568dc5a1541f01d54e54",
+    "semantic_hash": "b9da0cc2fa74568dc5a1541f01d54e54"
+  },
+  "src/content/site.ts": {
+    "mtime": 1789412983.9317431,
+    "seen": 1790185553.888654,
+    "ast_hash": "29ff8e566b268bdcfb397ec7782be6a3",
+    "semantic_hash": "29ff8e566b268bdcfb397ec7782be6a3"
+  },
+  "src/lib/client-hooks.ts": {
+    "mtime": 1788856905.7973456,
+    "seen": 1790185553.888654,
+    "ast_hash": "524cc2c5eb57caebd8013e3cd781aa84",
+    "semantic_hash": "524cc2c5eb57caebd8013e3cd781aa84"
+  },
+  "src/lib/quote.ts": {
+    "mtime": 1788629802.2509134,
+    "seen": 1790185553.888654,
+    "ast_hash": "0ba9078a45e1bf59ca287dd4d38d46d7",
+    "semantic_hash": "0ba9078a45e1bf59ca287dd4d38d46d7"
+  },
+  "src/lib/seo.ts": {
+    "mtime": 1789412983.932118,
+    "seen": 1790185553.8886552,
+    "ast_hash": "e0b5ca266e7cb165d743a4e81ef8fa19",
+    "semantic_hash": "e0b5ca266e7cb165d743a4e81ef8fa19"
+  },
+  "tsconfig.json": {
+    "mtime": 1788629802.251146,
+    "seen": 1790185553.8886552,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "CLAUDE.md": {
+    "mtime": 1789412983.9328418,
+    "seen": 1790185553.8886552,
+    "ast_hash": "7949014b5c64b0f92811dd54331723b4",
+    "semantic_hash": "7949014b5c64b0f92811dd54331723b4"
+  },
+  "README.md": {
+    "mtime": 1788629802.2379787,
+    "seen": 1790185553.8886552,
+    "ast_hash": "6c04a5823e03778246547e49f1c2755b",
+    "semantic_hash": "6c04a5823e03778246547e49f1c2755b"
+  },
+  "public/media/brand-atlantic.png": {
+    "mtime": 1788629802.2393274,
+    "seen": 1790185553.888656,
+    "ast_hash": "fc5fc5f35524fd0bcd8ab939878915d2",
+    "semantic_hash": "fc5fc5f35524fd0bcd8ab939878915d2"
+  },
+  "public/media/brand-legrand.png": {
+    "mtime": 1788629802.239474,
+    "seen": 1790185553.888656,
+    "ast_hash": "b13ec81bb0a9f5534469112395ec0cd3",
+    "semantic_hash": "b13ec81bb0a9f5534469112395ec0cd3"
+  },
+  "public/media/brand-rockwool.png": {
+    "mtime": 1788629802.2396145,
+    "seen": 1790185553.888656,
+    "ast_hash": "c67d8d4ed470d5ae5ea11c5f3810bdf0",
+    "semantic_hash": "c67d8d4ed470d5ae5ea11c5f3810bdf0"
+  },
+  "public/media/brand-schneider.png": {
+    "mtime": 1788629802.2397778,
+    "seen": 1790185553.8886569,
+    "ast_hash": "6c47b95ba576ed367721be41639a6098",
+    "semantic_hash": "6c47b95ba576ed367721be41639a6098"
+  },
+  "public/media/bureau-sur-mesure.webp": {
+    "mtime": 1788946715.64624,
+    "seen": 1790185553.8886569,
+    "ast_hash": "c544a2f2ae46c507a8a55785ac5ff511",
+    "semantic_hash": "c544a2f2ae46c507a8a55785ac5ff511"
+  },
+  "public/media/cache-radiateur-chene.webp": {
+    "mtime": 1788869262.831253,
+    "seen": 1790185553.8886569,
+    "ast_hash": "00cf2ab4a8d35232783c598d089e02b0",
+    "semantic_hash": "00cf2ab4a8d35232783c598d089e02b0"
+  },
+  "public/media/carrelage.webp": {
+    "mtime": 1788629802.2399623,
+    "seen": 1790185553.8886578,
+    "ast_hash": "e99243a08bcdc20193896b73679246b9",
+    "semantic_hash": "e99243a08bcdc20193896b73679246b9"
+  },
+  "public/media/chambre-peinture.webp": {
+    "mtime": 1788946715.7008548,
+    "seen": 1790185553.8886578,
+    "ast_hash": "066ac1b9b3c19e5b0c90e289fcfe7343",
+    "semantic_hash": "066ac1b9b3c19e5b0c90e289fcfe7343"
+  },
+  "public/media/couloir-menuiseries-chene.webp": {
+    "mtime": 1788869263.0334263,
+    "seen": 1790185553.8886578,
+    "ast_hash": "8b51d0b39fab8e9ada4a153505959f48",
+    "semantic_hash": "8b51d0b39fab8e9ada4a153505959f48"
+  },
+  "public/media/cuisine-paris07.webp": {
+    "mtime": 1788629802.2401032,
+    "seen": 1790185553.8886578,
+    "ast_hash": "aa5c7ae5a0a34d27a215ae40d501d53d",
+    "semantic_hash": "aa5c7ae5a0a34d27a215ae40d501d53d"
+  },
+  "public/media/cuisine-u-verriere.webp": {
+    "mtime": 1788947346.7432487,
+    "seen": 1790185553.888659,
+    "ast_hash": "4e6c913c923f3f33f2aa17a095a1b705",
+    "semantic_hash": "4e6c913c923f3f33f2aa17a095a1b705"
+  },
+  "public/media/cuisine-u-vue-entree.webp": {
+    "mtime": 1788947346.6266694,
+    "seen": 1790185553.888659,
+    "ast_hash": "453d584d5eabf357976712832dc29c5f",
+    "semantic_hash": "453d584d5eabf357976712832dc29c5f"
+  },
+  "public/media/douche-marbre-ensemble.webp": {
+    "mtime": 1790008059.4346168,
+    "seen": 1790185553.888659,
+    "ast_hash": "7e2d3e74ada4201266174a58a2a5b84f",
+    "semantic_hash": "7e2d3e74ada4201266174a58a2a5b84f"
+  },
+  "public/media/douche-marbre-receveur.webp": {
+    "mtime": 1790008059.3811908,
+    "seen": 1790185553.88866,
+    "ast_hash": "942362e49d7080dfc75878fc4f551e12",
+    "semantic_hash": "942362e49d7080dfc75878fc4f551e12"
+  },
+  "public/media/douche-renovee-apres.webp": {
+    "mtime": 1788940716.4687607,
+    "seen": 1790185553.88866,
+    "ast_hash": "bbfd9d38a582791bc8ad372d23128078",
+    "semantic_hash": "bbfd9d38a582791bc8ad372d23128078"
+  },
+  "public/media/douche-renovee-avant.webp": {
+    "mtime": 1788940716.4491827,
+    "seen": 1790185553.88866,
+    "ast_hash": "9bd4c4e4940f48c8d0e4940cee0bd437",
+    "semantic_hash": "9bd4c4e4940f48c8d0e4940cee0bd437"
+  },
+  "public/media/douche-zellige.webp": {
+    "mtime": 1788869261.6225665,
+    "seen": 1790185553.88866,
+    "ast_hash": "f72976dd538556b16028b8c46efa1330",
+    "semantic_hash": "f72976dd538556b16028b8c46efa1330"
+  },
+  "public/media/dressing-paris02.webp": {
+    "mtime": 1788629802.2404325,
+    "seen": 1790185553.888661,
+    "ast_hash": "b97f933427acd5f9bde7d25e4b3f0979",
+    "semantic_hash": "b97f933427acd5f9bde7d25e4b3f0979"
+  },
+  "public/media/electricite.webp": {
+    "mtime": 1788629802.2405872,
+    "seen": 1790185553.888661,
+    "ast_hash": "b3adde6857e92a492ad4c3363b262d2f",
+    "semantic_hash": "b3adde6857e92a492ad4c3363b262d2f"
+  },
+  "public/media/entree-parquet-mosaique.webp": {
+    "mtime": 1788947346.550864,
+    "seen": 1790185553.888661,
+    "ast_hash": "6040ba4f5302113ac88c79389b8334ca",
+    "semantic_hash": "6040ba4f5302113ac88c79389b8334ca"
+  },
+  "public/media/logo.png": {
+    "mtime": 1788629802.2407198,
+    "seen": 1790185553.888662,
+    "ast_hash": "77061f564705dffc18fb08474866fd94",
+    "semantic_hash": "77061f564705dffc18fb08474866fd94"
+  },
+  "public/media/mansarde-juvisy.webp": {
+    "mtime": 1788629802.2409387,
+    "seen": 1790185553.888662,
+    "ast_hash": "46d8cf26142a1ad29f1f086df4874b4b",
+    "semantic_hash": "46d8cf26142a1ad29f1f086df4874b4b"
+  },
+  "public/media/meuble-mural-antony.webp": {
+    "mtime": 1788629802.2411087,
+    "seen": 1790185553.888662,
+    "ast_hash": "a463faf53eee7fc2dcd26b43bbfbdf6b",
+    "semantic_hash": "a463faf53eee7fc2dcd26b43bbfbdf6b"
+  },
+  "public/media/peinture.webp": {
+    "mtime": 1788629802.2412264,
+    "seen": 1790185553.888663,
+    "ast_hash": "d2f7ffee3df82372f992dfebaeb439b7",
+    "semantic_hash": "d2f7ffee3df82372f992dfebaeb439b7"
+  },
+  "public/media/portes-chene-detail.webp": {
+    "mtime": 1788947346.4930925,
+    "seen": 1790185553.888663,
+    "ast_hash": "7f3fcfaa9989b8c6c28329987850343d",
+    "semantic_hash": "7f3fcfaa9989b8c6c28329987850343d"
+  },
+  "public/media/portrait.png": {
+    "mtime": 1788629802.2413988,
+    "seen": 1790185553.888663,
+    "ast_hash": "e6533ea1ac2492f471e9a973bb496035",
+    "semantic_hash": "e6533ea1ac2492f471e9a973bb496035"
+  },
+  "public/media/renovation-complete.webp": {
+    "mtime": 1788629802.2415237,
+    "seen": 1790185553.888663,
+    "ast_hash": "5ddbfbfb640b79e83908a6b12ee477ff",
+    "semantic_hash": "5ddbfbfb640b79e83908a6b12ee477ff"
+  },
+  "public/media/salle-d-eau-beton-cire.webp": {
+    "mtime": 1788869262.0509417,
+    "seen": 1790185553.888664,
+    "ast_hash": "00bdec5cd09353370036d90306c3afe1",
+    "semantic_hash": "00bdec5cd09353370036d90306c3afe1"
+  },
+  "public/media/salle-de-bain-sous-combles.webp": {
+    "mtime": 1788869261.3257685,
+    "seen": 1790185553.888664,
+    "ast_hash": "f941ba8d173f642d8f9e7eab6b6cf335",
+    "semantic_hash": "f941ba8d173f642d8f9e7eab6b6cf335"
+  },
+  "public/media/sous-escalier-villejuif.webp": {
+    "mtime": 1788629802.2417157,
+    "seen": 1790185553.888664,
+    "ast_hash": "f0827edc1f4572ca303f2cd2edffcee6",
+    "semantic_hash": "f0827edc1f4572ca303f2cd2edffcee6"
+  },
+  "public/media/tableau-electrique.webp": {
+    "mtime": 1788947346.2508986,
+    "seen": 1790185553.8886652,
+    "ast_hash": "c8bfab6c1ce3d401c2b4bb2ebe9f4718",
+    "semantic_hash": "c8bfab6c1ce3d401c2b4bb2ebe9f4718"
+  },
+  "public/media/tete-de-lit-paris17.webp": {
+    "mtime": 1788629802.2419202,
+    "seen": 1790185553.8886652,
+    "ast_hash": "a48faf59b25e61a99e199b61ec543a05",
+    "semantic_hash": "a48faf59b25e61a99e199b61ec543a05"
+  },
+  "public/media/wc-meuble-vasque-chene.webp": {
+    "mtime": 1788869262.5763254,
+    "seen": 1790185553.8886652,
+    "ast_hash": "dacd8d10d021cbc8f701d0fb0fa71749",
+    "semantic_hash": "dacd8d10d021cbc8f701d0fb0fa71749"
+  },
+  "public/media/zellige-banc-angle.webp": {
+    "mtime": 1788947673.7672834,
+    "seen": 1790185553.8886662,
+    "ast_hash": "67877a96654e1a0463c1af92d1505613",
+    "semantic_hash": "67877a96654e1a0463c1af92d1505613"
+  },
+  "public/media/zellige-banc.webp": {
+    "mtime": 1788947346.3314419,
+    "seen": 1790185553.8886662,
+    "ast_hash": "fcb0ed66b4bfc511967e382ca39ee5eb",
+    "semantic_hash": "fcb0ed66b4bfc511967e382ca39ee5eb"
+  },
+  "public/media/zellige-sol.webp": {
+    "mtime": 1788947346.4210286,
+    "seen": 1790185553.8886662,
+    "ast_hash": "2d3d09c31b858eb5f98da029eabfde3e",
+    "semantic_hash": "2d3d09c31b858eb5f98da029eabfde3e"
+  }
+}
