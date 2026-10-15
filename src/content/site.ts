@@ -22,8 +22,11 @@ export const company = {
   /** Adresse publiée sur le site, affichée aux visiteurs. */
   email: "alexproreno91@gmail.com",
   emailHref: "mailto:alexproreno91@gmail.com",
-  /** Adresse publiée dans les mentions légales, et destinataire des devis. */
+  /** Adresse publiée dans les mentions légales. */
   legalEmail: "alexalcalapro@gmail.com",
+  /** Boîte qui reçoit les demandes du formulaire de devis. Repli si
+   *  `QUOTE_TO_EMAIL` n'est pas défini dans l'environnement. */
+  quoteEmail: "manuelalejandroalcalafigueroa@gmail.com",
   instagram: "https://www.instagram.com/alexpro9878",
   address: {
     street: "121 rue Manin",

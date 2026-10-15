@@ -17,7 +17,7 @@ export const runtime = "nodejs";
  * Destinataire(s) des demandes de devis. `QUOTE_TO_EMAIL` accepte plusieurs
  * adresses séparées par des virgules.
  */
-const TO = (process.env.QUOTE_TO_EMAIL ?? company.legalEmail)
+const TO = (process.env.QUOTE_TO_EMAIL ?? company.quoteEmail)
   .split(",")
   .map((address) => address.trim())
   .filter(Boolean);
@@ -175,12 +175,20 @@ export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
-    // Sans clé configurée, la demande est tracée côté serveur plutôt que perdue.
-    console.warn(
-      "[devis] RESEND_API_KEY absente — demande non envoyée par email.",
+    // Sans clé, aucun email ne part. On le dit au visiteur : un accusé de
+    // réception affiché alors que rien n'est envoyé fait disparaître la
+    // demande sans que personne ne s'en aperçoive.
+    console.error(
+      "[devis] RESEND_API_KEY absente — demande NON transmise.",
       JSON.stringify({ ...data, message: data.message.slice(0, 200) }),
     );
-    return NextResponse.json({ ok: true, delivered: false });
+    return NextResponse.json(
+      {
+        ok: false,
+        error: `L'envoi a échoué. Contactez-nous directement au ${company.phone} ou à ${company.email}.`,
+      },
+      { status: 503 },
+    );
   }
 
   try {
