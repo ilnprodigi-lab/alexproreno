@@ -20,8 +20,8 @@ export const company = {
   phoneHref: "tel:+33782475339",
   phoneInternational: "+33 7 82 47 53 39",
   /** Adresse publiée sur le site, affichée aux visiteurs. */
-  email: "alexproreno91@gmail.com",
-  emailHref: "mailto:alexproreno91@gmail.com",
+  email: "manuelalejandroalcalafigueroa@gmail.com",
+  emailHref: "mailto:manuelalejandroalcalafigueroa@gmail.com",
   /** Adresse publiée dans les mentions légales. */
   legalEmail: "alexalcalapro@gmail.com",
   /** Boîte qui reçoit les demandes du formulaire de devis. Repli si
