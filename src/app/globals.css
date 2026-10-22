@@ -3,40 +3,48 @@
    Palette sombre : charbon chaud · nuit profonde · bronze champagne
 
    Les noms restent sémantiques : --paper = surface, --ink = texte.
-   Contrastes mesurés sur --paper (#100e0b) :
-     ink 17.2 · ink-2 14.1 · ink-3 10.8 · stone 7.3 · stone-2 5.1 · bronze 8.0
-   --stone-3 (3.4) est décoratif : bordures et états inactifs, jamais du texte.
+   L'échelle a été remontée d'environ un cran et demi : le client trouvait le
+   site trop sombre. Le charbon reste, mais il respire. #1b1713 est la limite
+   haute — au-delà, --stone-2 passe sous le seuil AA.
+
+   Contrastes mesurés sur --paper (#1b1713) :
+     ink 16.4 · ink-2 13.7 · ink-3 10.7 · stone 7.6 · stone-2 5.9 · bronze 7.4
+   Sur la surface la plus haute (--paper-4), --stone-2 tient encore 4.5.
+   --stone-3 (3.7) est décoratif : bordures et états inactifs, jamais du texte.
    ========================================================================== */
 
 :root {
   /* Surfaces, de la plus profonde à la plus haute */
-  --paper-deep: #0a0907;
-  --paper: #100e0b;
-  --paper-2: #17140f;
-  --paper-3: #1e1a14;
-  --paper-4: #262118;
+  --paper-deep: #141109;
+  --paper: #1b1713;
+  --paper-2: #221d18;
+  --paper-3: #2a241e;
+  --paper-4: #332c25;
 
   /* Encres */
-  --ink: #f6f2e9;
-  --ink-2: #e2dccf;
-  --ink-3: #c9c1b1;
+  --ink: #f8f5ee;
+  --ink-2: #e7e1d5;
+  --ink-3: #d0c8b8;
 
   /* Pierre / béton */
-  --stone: #a79e8c;
-  --stone-2: #8b8371;
-  --stone-3: #6e6759;
+  --stone: #b2a995;
+  --stone-2: #9c9381;
+  --stone-3: #7a7263;
 
   /* Lignes */
-  --line: #2b2620;
-  --line-2: #3a342a;
-  --line-dark: #201c17;
+  --line: #39322a;
+  --line-2: #4a4238;
+  --line-dark: #2a241e;
 
   /* Accent bronze champagne — s'éclaircit au survol, comme un métal qui capte la lumière */
   --bronze: #c9a063;
   --bronze-deep: #e0bc85;
-  --bronze-soft: #1c1710;
-  --bronze-line: #4a3b26;
+  --bronze-soft: #2a2015;
+  --bronze-line: #5c4a30;
   --sand: #dcc9a6;
+
+  /* Halo chaud posé derrière les photos : elles cessent de flotter dans le noir. */
+  --glow: 0 24px 70px -34px rgba(201, 160, 99, 0.3);
 
   /* Typographie */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;

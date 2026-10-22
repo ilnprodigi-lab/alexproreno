@@ -175,7 +175,7 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--paper-3);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), var(--glow);
 }
 
 .frame img {
@@ -250,6 +250,19 @@
 @media (max-width: 560px) {
   .facts {
     gap: 16px 28px;
+  }
+
+  /* Les deux boutons se calaient sur leur texte et n'avaient donc pas la même
+     largeur. Pleine largeur, ils forment une paire nette sous le pouce. */
+  .ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .ctas > * {
+    width: 100%;
+    justify-content: center;
   }
 
   .caption {

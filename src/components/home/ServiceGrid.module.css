@@ -141,13 +141,17 @@
     line-height: 1.2;
   }
 
+  /* Sur deux colonnes étroites, la description tenait sur deux lignes coupées
+     en plein mot. Mieux vaut ne rien montrer que montrer un texte tronqué :
+     le numéro, le titre et le lien suffisent à choisir. */
   .cardText {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 0.82rem;
-    line-height: 1.45;
+    display: none;
+  }
+
+  /* Les prestations sont en nombre impair : la dernière restait seule à côté
+     d'une case vide. Elle occupe la ligne entière. */
+  .grid > li:last-child:nth-child(odd) {
+    grid-column: span 2;
   }
 
   .cardFlag {

@@ -1,7 +1,7 @@
 # CLAUDE.md
 
-Site AlexProReno — Next.js 16 (App Router), TypeScript, CSS Modules, React Three Fiber,
-GSAP ScrollTrigger. Lire `README.md` pour l'architecture complète.
+Site AlexProReno — Next.js 16 (App Router), TypeScript, CSS Modules, GSAP ScrollTrigger.
+Lire `README.md` pour l'architecture complète.
 
 ## Règle absolue sur le contenu
 
@@ -37,9 +37,9 @@ complémentaires — pas une liste alphabétique.
 - **Rendu serveur** : ne pas introduire `useSearchParams()` dans un formulaire ou un
   contenu indexable — cela vide le HTML servi. Lire la query côté page et passer la
   valeur en prop.
-- **Cadrage 3D** : les positions de caméra dans `Interior.tsx` sont calibrées pour que
-  la pièce tienne dans le cadre de tous les ratios. Revérifier après toute modification
-  de `parts.ts`.
+- **Palette** : l'échelle des surfaces a été remontée pour que le site soit moins
+  sombre. `--paper` vaut `#1b1713`, qui est la limite haute : au-delà, `--stone-2`
+  passe sous le seuil AA. Recalculer les contrastes avant de toucher aux tokens.
 - **Mouvement réduit** : chaque animation doit se neutraliser sous
   `prefers-reduced-motion`, et les contenus `[data-reveal]` rester visibles sans JS.
 

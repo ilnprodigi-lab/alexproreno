@@ -47,7 +47,7 @@
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(16, 14, 11, 0.82);
+  background: rgba(27, 23, 19, 0.84);
   backdrop-filter: blur(14px) saturate(1.2);
   border-bottom: 1px solid var(--line);
   transition: border-color var(--t-med), box-shadow var(--t-med);

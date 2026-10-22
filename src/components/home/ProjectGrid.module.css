@@ -25,12 +25,13 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--paper-3);
+  box-shadow: var(--glow);
   transition: transform var(--t-med), box-shadow var(--t-med);
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), var(--glow);
 }
 
 .media {
@@ -62,11 +63,14 @@
   padding: clamp(18px, 2vw, 26px);
   background: linear-gradient(
     to top,
-    rgba(15, 13, 10, 0.86) 0%,
-    rgba(15, 13, 10, 0.42) 58%,
-    rgba(15, 13, 10, 0) 100%
+    rgba(18, 15, 12, 0.92) 0%,
+    rgba(18, 15, 12, 0.55) 40%,
+    rgba(18, 15, 12, 0) 76%
   );
-  color: var(--paper);
+  /* Texte clair : le dégradé assombrit le bas de la photo pour l'accueillir.
+     C'était --paper, donc la couleur du fond sombre : les titres étaient
+     écrits en quasi-noir par-dessus les photos. */
+  color: var(--ink);
 }
 
 .location {
