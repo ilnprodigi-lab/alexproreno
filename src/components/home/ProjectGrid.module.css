@@ -124,3 +124,54 @@
     aspect-ratio: 4 / 3;
   }
 }
+
+/* Bande glissante sur téléphone : cinq cartes empilées faisaient 1 568 px, soit
+   deux écrans pour une seule section. Le défilement est natif — il fonctionne
+   au doigt sans JavaScript, et le navigateur gère l'accrochage. */
+@media (max-width: 620px) {
+  .strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    /* La bande part et finit au bord de l'écran. */
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 0 var(--gutter) 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-2) transparent;
+  }
+
+  .strip::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .strip::-webkit-scrollbar-thumb {
+    background: var(--line-2);
+    border-radius: 999px;
+  }
+
+  .strip > .item,
+  .strip > .itemTall,
+  .strip > .itemWide {
+    flex: 0 0 auto;
+    width: 80vw;
+    grid-column: auto;
+    scroll-snap-align: start;
+  }
+
+  /* Les cartes au-delà de la première sont hors écran horizontalement :
+     l'observateur d'apparition ne les voit jamais et elles resteraient
+     invisibles une fois qu'on fait glisser. Dans la bande, elles sont
+     affichées d'emblée. */
+  .strip > [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .strip .media,
+  .strip .mediaWide {
+    aspect-ratio: 4 / 5;
+  }
+}

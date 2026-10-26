@@ -160,7 +160,7 @@ export default async function ServicePage({ params }: Params) {
                 </Link>
               }
             />
-            <ProjectGrid projects={relatedProjects} />
+            <ProjectGrid projects={relatedProjects} variant="strip" />
           </div>
         </section>
       ) : null}

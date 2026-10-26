@@ -248,8 +248,18 @@
 }
 
 @media (max-width: 560px) {
+  /* Les trois repères se mettaient chacun sur sa ligne et prenaient 190 px.
+     Deux colonnes les ramènent à deux lignes et alignent les libellés. */
   .facts {
-    gap: 16px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+    margin-top: 26px;
+    padding-top: 18px;
+  }
+
+  .fact:last-child {
+    grid-column: 1 / -1;
   }
 
   /* Les deux boutons se calaient sur leur texte et n'avaient donc pas la même

@@ -7,12 +7,18 @@ type Props = {
   projects: Project[];
   /** h2 quand la grille suit directement le h1 de la page, h3 sous un intertitre. */
   headingLevel?: "h2" | "h3";
+  /**
+   * "strip" fait glisser les cartes horizontalement sur téléphone au lieu de
+   * les empiler. Réservé aux sélections : la page Réalisations, qui sert
+   * d'index, garde sa grille.
+   */
+  variant?: "grid" | "strip";
 };
 
-export function ProjectGrid({ projects, headingLevel = "h3" }: Props) {
+export function ProjectGrid({ projects, headingLevel = "h3", variant = "grid" }: Props) {
   const Heading = headingLevel;
   return (
-    <ul className={styles.grid}>
+    <ul className={`${styles.grid} ${variant === "strip" ? styles.strip : ""}`}>
       {projects.map((project, i) => {
         const wide = project.size === "wide";
         return (

@@ -37,9 +37,13 @@ complémentaires — pas une liste alphabétique.
 - **Rendu serveur** : ne pas introduire `useSearchParams()` dans un formulaire ou un
   contenu indexable — cela vide le HTML servi. Lire la query côté page et passer la
   valeur en prop.
-- **Palette** : l'échelle des surfaces a été remontée pour que le site soit moins
-  sombre. `--paper` vaut `#1b1713`, qui est la limite haute : au-delà, `--stone-2`
-  passe sous le seuil AA. Recalculer les contrastes avant de toucher aux tokens.
+- **Palette** : l'échelle des surfaces a été remontée en deux passes, le client
+  trouvait le site trop sombre. `--paper` vaut `#221d18`. Les gris ont été remontés
+  en même temps, sans quoi `--stone-2` serait passé sous l'AA. Recalculer les
+  contrastes texte/surface avant de toucher à ces tokens.
+- **Bandes qui défilent** : dans une bande horizontale, les éléments au-delà du
+  premier sont hors écran et l'observateur d'apparition ne les voit jamais. Ils
+  doivent être affichés d'emblée, sinon ils restent invisibles au glissement.
 - **Mouvement réduit** : chaque animation doit se neutraliser sous
   `prefers-reduced-motion`, et les contenus `[data-reveal]` rester visibles sans JS.
 

@@ -3,44 +3,44 @@
    Palette sombre : charbon chaud · nuit profonde · bronze champagne
 
    Les noms restent sémantiques : --paper = surface, --ink = texte.
-   L'échelle a été remontée d'environ un cran et demi : le client trouvait le
-   site trop sombre. Le charbon reste, mais il respire. #1b1713 est la limite
-   haute — au-delà, --stone-2 passe sous le seuil AA.
+   L'échelle a été remontée en deux passes : le client trouvait le site trop
+   sombre. Le charbon reste, mais il respire. Les gris ont été remontés en
+   même temps que les surfaces, sans quoi --stone-2 serait passé sous l'AA.
 
-   Contrastes mesurés sur --paper (#1b1713) :
-     ink 16.4 · ink-2 13.7 · ink-3 10.7 · stone 7.6 · stone-2 5.9 · bronze 7.4
+   Contrastes mesurés sur --paper (#221d18) :
+     ink 15.9 · ink-2 13.5 · ink-3 11.1 · stone 8.0 · stone-2 6.3 · bronze 6.9
    Sur la surface la plus haute (--paper-4), --stone-2 tient encore 4.5.
-   --stone-3 (3.7) est décoratif : bordures et états inactifs, jamais du texte.
+   --stone-3 est décoratif : bordures et états inactifs, jamais du texte.
    ========================================================================== */
 
 :root {
   /* Surfaces, de la plus profonde à la plus haute */
-  --paper-deep: #141109;
-  --paper: #1b1713;
-  --paper-2: #221d18;
-  --paper-3: #2a241e;
-  --paper-4: #332c25;
+  --paper-deep: #191510;
+  --paper: #221d18;
+  --paper-2: #2a241e;
+  --paper-3: #332c25;
+  --paper-4: #3d352c;
 
   /* Encres */
-  --ink: #f8f5ee;
-  --ink-2: #e7e1d5;
-  --ink-3: #d0c8b8;
+  --ink: #fbf9f4;
+  --ink-2: #ece6db;
+  --ink-3: #d9d2c3;
 
   /* Pierre / béton */
-  --stone: #b2a995;
-  --stone-2: #9c9381;
-  --stone-3: #7a7263;
+  --stone: #bcb3a0;
+  --stone-2: #a79e8c;
+  --stone-3: #8a8171;
 
   /* Lignes */
-  --line: #39322a;
-  --line-2: #4a4238;
-  --line-dark: #2a241e;
+  --line: #433b31;
+  --line-2: #564c40;
+  --line-dark: #332c25;
 
   /* Accent bronze champagne — s'éclaircit au survol, comme un métal qui capte la lumière */
   --bronze: #c9a063;
   --bronze-deep: #e0bc85;
-  --bronze-soft: #2a2015;
-  --bronze-line: #5c4a30;
+  --bronze-soft: #332817;
+  --bronze-line: #6b5739;
   --sand: #dcc9a6;
 
   /* Halo chaud posé derrière les photos : elles cessent de flotter dans le noir. */
@@ -55,6 +55,8 @@
   --container: 1280px;
   --gutter: clamp(20px, 5vw, 56px);
   --section-y: clamp(72px, 8.5vw, 136px);
+  --head-gap: 28px;
+  --head-space: clamp(36px, 4vw, 56px);
 
   /* Mouvement */
   --ease: cubic-bezier(0.22, 0.68, 0.16, 1);
@@ -69,6 +71,17 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
   --shadow-md: 0 14px 34px -12px rgba(0, 0, 0, 0.7);
   --shadow-lg: 0 34px 68px -24px rgba(0, 0, 0, 0.82);
+}
+
+/* Sur téléphone, le minimum des espacements s'appliquait tel quel : sept
+   sections empilaient près d'un écran entier de vide. On resserre le rythme
+   sans toucher au bureau. */
+@media (max-width: 620px) {
+  :root {
+    --section-y: 52px;
+    --head-gap: 16px;
+    --head-space: 24px;
+  }
 }
 
 *,

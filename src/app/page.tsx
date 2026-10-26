@@ -62,7 +62,7 @@ export default function HomePage() {
               </Link>
             }
           />
-          <ProjectGrid projects={featuredProjects} />
+          <ProjectGrid projects={featuredProjects} variant="strip" />
         </div>
       </section>
 

@@ -150,7 +150,7 @@ export default async function ProjectPage({ params }: Params) {
             id="autres-titre"
             size="m"
           />
-          <ProjectGrid projects={others} />
+          <ProjectGrid projects={others} variant="strip" />
         </div>
       </section>
 
