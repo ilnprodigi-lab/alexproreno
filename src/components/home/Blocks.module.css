@@ -162,6 +162,12 @@
   align-items: center;
 }
 
+/* Sans cela, une colonne de grille s'élargit pour contenir son enfant le plus
+   large — ici l'adresse email, insécable. */
+.ctaGrid > * {
+  min-width: 0;
+}
+
 .ctaTitle {
   color: var(--ink);
 }
@@ -193,6 +199,7 @@
   gap: 20px;
   padding-block: 20px;
   border-bottom: 1px solid var(--line-dark);
+  min-width: 0;
 }
 
 .ctaLabel {
@@ -210,6 +217,10 @@
   color: var(--ink);
   text-align: right;
   transition: color var(--t-fast);
+  min-width: 0;
+  /* Une adresse email longue n'offre aucun point de coupure : elle élargissait
+     la ligne au-delà de l'écran et poussait toute la section hors cadre. */
+  overflow-wrap: anywhere;
 }
 
 a.ctaValue:hover {
@@ -243,5 +254,18 @@ a.ctaValue:hover {
   .brandsLogos {
     justify-content: flex-start;
     gap: 24px 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* Libellé au-dessus de la valeur : côte à côte, un email long ne laissait
+     que quelques caractères de large à la valeur. */
+  .ctaItem {
+    display: grid;
+    gap: 4px;
+  }
+
+  .ctaValue {
+    text-align: left;
   }
 }
